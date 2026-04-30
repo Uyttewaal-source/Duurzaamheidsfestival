@@ -1,25 +1,17 @@
 import type { Metadata } from 'next'
-import { Nunito, Nunito_Sans } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-import { Navigation } from '@/components/navigation'
-import { Footer } from '@/components/footer'
 
-const nunito = Nunito({ 
+const openSans = Open_Sans({ 
   subsets: ["latin"],
-  variable: '--font-nunito',
-  display: 'swap',
-});
-
-const nunitoSans = Nunito_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-nunito-sans',
+  variable: '--font-open-sans',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Duurzaamheidsfestival 2026 | De wereld is je klaslokaal',
-  description: 'Het jaarlijkse duurzaamheidsfestival voor onderwijs. Georganiseerd door Eco-Schools, Leren voor Morgen en Collectief Natuurinclusief.',
+  title: 'Duurzaamheidsfestival | De wereld is jouw klaslokaal',
+  description: 'Het Duurzaamheidsfestival voor onderwijs op woensdag 30 september. Georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en Gemeente Arnhem.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -46,11 +38,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="nl" className={`${nunito.variable} ${nunitoSans.variable} bg-background`}>
+    <html lang="nl" className={`${openSans.variable} bg-background scroll-smooth`}>
       <body className="font-sans antialiased">
-        <Navigation />
         <main>{children}</main>
-        <Footer />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
