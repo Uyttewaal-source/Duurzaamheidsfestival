@@ -39,13 +39,12 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Brand colors - Duurzaamheidsfestival */
-  --turquoise: #00A99D;
-  --turquoise-light: oklch(0.95 0.06 180);
-  --orange: #E84E0F;
-  --orange-light: oklch(0.96 0.05 45);
-  --green: #9CC495;
-  --green-light: oklch(0.95 0.03 140);
-  --cream: oklch(0.98 0.01 90);
+  --green-primary: #2BB573;
+  --red-primary: #CC3427;
+  --green-soft: #D5F0E3;
+  --red-soft: #F5D6D4;
+  --white: #FFFFFF;
+  --dark-text: #1F2933;
 }
 
 .dark {
@@ -87,12 +86,12 @@
   --font-sans: var(--font-open-sans), 'Open Sans', sans-serif;
   --font-serif: var(--font-open-sans), 'Open Sans', sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --color-orange: var(--orange);
-  --color-turquoise: var(--turquoise);
-  --color-green: var(--green);
-  --color-green-light: var(--green-light);
-  --color-orange-light: var(--orange-light);
-  --color-turquoise-light: var(--turquoise-light);
+  --color-green-primary: var(--green-primary);
+  --color-red-primary: var(--red-primary);
+  --color-green-soft: var(--green-soft);
+  --color-red-soft: var(--red-soft);
+  --color-white: var(--white);
+  --color-dark-text: var(--dark-text);
   --color-cream: var(--cream);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
