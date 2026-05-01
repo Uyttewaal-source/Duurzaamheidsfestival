@@ -20,7 +20,7 @@ export function SiteHeader() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-6">
         <a href="#" className="flex items-center gap-2">
           <Image 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-JZPXtBKIEgkc6XFNuRgA2Xo.jpg"
+            src="/duurzaamheidsfestival-logo.svg"
             alt="Duurzaamheidsfestival"
             width={150}
             height={50}
