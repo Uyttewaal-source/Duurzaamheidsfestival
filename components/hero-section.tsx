@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Calendar, ArrowRight, ChevronDown } from "lucide-react"
+import { Calendar, ArrowRight, ChevronDown, Clock, MapPin } from "lucide-react"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -7,28 +7,23 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-green-soft px-4 py-20 lg:px-6 lg:py-32">
       {/* Decorative butterfly element */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 lg:opacity-10">
-        <svg 
-          viewBox="0 0 200 200" 
-          className="h-64 w-64 text-red-primary md:h-96 md:w-96 lg:h-[500px] lg:w-[500px]"
-          fill="currentColor"
-        >
-          {/* Simplified butterfly shape */}
-          <ellipse cx="70" cy="70" rx="50" ry="60" />
-          <ellipse cx="130" cy="70" rx="50" ry="60" />
-          <ellipse cx="70" cy="130" rx="40" ry="50" />
-          <ellipse cx="130" cy="130" rx="40" ry="50" />
-          <ellipse cx="100" cy="100" rx="8" ry="40" fill="currentColor" />
-        </svg>
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dag_van_de_Duurzaamheid_vlinder-iMpgfnsCazvXM9PynZFWO3G4MoqpRm.png"
+          alt="Butterfly decoration"
+          width={500}
+          height={500}
+          className="h-64 w-64 md:h-96 md:w-96 lg:h-[500px] lg:w-[500px]"
+        />
       </div>
       
       <div className="relative mx-auto max-w-4xl text-center">
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <Image 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dag_van_de_Duurzaamheid_Onderwijs-J91GEkiaO7goxanKcEHsiH1WPbMMOW.png"
-            alt="Dag van de Duurzaamheid Onderwijs"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-9cczSLGFhz8AYm5bbjYZVsucX97o9f.jpg"
+            alt="Duurzaamheidsfestival"
             width={400}
-            height={120}
+            height={100}
             className="h-auto w-full max-w-md"
           />
         </div>
@@ -40,14 +35,24 @@ export function HeroSection() {
         </h1>
         
         {/* Subtitle */}
-        <p className="mx-auto mb-6 max-w-2xl text-lg leading-relaxed text-dark-text/80 md:text-xl">
+        <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-dark-text/80 md:text-xl">
           Een dag waarop leren naar buiten gaat: de school uit, de wereld in.
         </p>
         
-        {/* Date */}
-        <div className="mb-4 flex items-center justify-center gap-2 text-dark-text">
-          <Calendar className="h-5 w-5 text-red-primary" />
-          <span className="text-lg font-semibold">Woensdag 30 september</span>
+        {/* Key info grid */}
+        <div className="mb-10 grid gap-4 sm:grid-cols-3">
+          <div className="flex items-center justify-center gap-2 text-dark-text">
+            <Calendar className="h-5 w-5 text-red-primary" />
+            <span className="font-semibold">Woensdag 25 september</span>
+          </div>
+          <div className="flex items-center justify-center gap-2 text-dark-text">
+            <Clock className="h-5 w-5 text-red-primary" />
+            <span className="font-semibold">10:30–16:30 uur</span>
+          </div>
+          <div className="flex items-center justify-center gap-2 text-dark-text">
+            <MapPin className="h-5 w-5 text-red-primary" />
+            <span className="font-semibold">Burgers&apos; Zoo</span>
+          </div>
         </div>
         
         {/* Target audience */}

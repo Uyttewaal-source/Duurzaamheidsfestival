@@ -1,29 +1,26 @@
 import { ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 const organizers = [
   {
     name: "Eco-Schools",
     url: "https://eco-schools.nl/",
-    initials: "ES",
-    color: "bg-green-soft text-green-primary",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0MPmAxI5eJbGOyoiOMlkn1lx0PlvcG.png",
   },
   {
     name: "Leren voor Morgen",
     url: "https://lerenvoormorgen.org/",
-    initials: "LvM",
-    color: "bg-red-soft text-red-primary",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sEZIs3qTI06GScihT4n2tktEitINmp.png",
   },
   {
     name: "Collectief Natuurinclusief",
     url: "https://collectiefnatuurinclusief.nl/",
-    initials: "CN",
-    color: "bg-green-soft text-green-primary",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9RpSJ8sUZUSu55nfXaIExZJY1QAQq9.png",
   },
   {
     name: "Gemeente Arnhem",
     url: "https://www.arnhem.nl/",
-    initials: "GA",
-    color: "bg-red-soft text-red-primary",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VyOLxbq7inP7DvaXnhiVqoLGdqU4Ym.png",
   },
 ]
 
@@ -38,20 +35,26 @@ export function OrganizersSection() {
           Het Duurzaamheidsfestival wordt georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en de Gemeente Arnhem. Samen brengen zij onderwijs, natuur, duurzaamheid en samenleving bij elkaar rond het thema: De wereld is jouw klaslokaal.
         </p>
         
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {organizers.map((org) => (
             <a
               key={org.name}
               href={org.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-green-primary hover:shadow-lg"
+              className="group flex flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-8 transition-all hover:border-green-primary hover:shadow-lg"
             >
-              <div className={`mb-4 flex h-16 w-16 items-center justify-center rounded-xl ${org.color} font-bold transition-transform group-hover:scale-110`}>
-                {org.initials}
+              <div className="relative h-24 w-full mb-4 flex items-center justify-center">
+                <Image 
+                  src={org.logo}
+                  alt={org.name}
+                  width={140}
+                  height={80}
+                  className="h-auto w-auto max-h-24 object-contain"
+                />
               </div>
-              <h3 className="mb-2 text-center font-semibold text-dark-text">{org.name}</h3>
-              <span className="flex items-center gap-1 text-sm text-dark-text/60 group-hover:text-green-primary">
+              <h3 className="mb-2 text-center font-semibold text-dark-text text-sm">{org.name}</h3>
+              <span className="flex items-center gap-1 text-xs text-dark-text/60 group-hover:text-green-primary transition-colors">
                 Bezoek website
                 <ExternalLink className="h-3 w-3" />
               </span>

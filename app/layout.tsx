@@ -11,24 +11,10 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: 'Duurzaamheidsfestival | De wereld is jouw klaslokaal',
-  description: 'Het Duurzaamheidsfestival voor onderwijs op woensdag 30 september. Georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en Gemeente Arnhem.',
+  description: 'Het Duurzaamheidsfestival voor onderwijs op woensdag 25 september in Burgers\' Zoo, Arnhem. Georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en Gemeente Arnhem.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dag_van_de_Duurzaamheid_vlinder-iMpgfnsCazvXM9PynZFWO3G4MoqpRm.png',
   },
 }
 
