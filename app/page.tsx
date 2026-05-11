@@ -39,7 +39,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-dark-text">Datum</h3>
-                <p className="text-dark-text/70">Woensdag 25 september 2026</p>
+                <p className="text-dark-text/70">Vrijdag 25 september 2026</p>
               </div>
             </div>
 
@@ -74,12 +74,12 @@ export default function HomePage() {
             </div>
 
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-soft">
-                <Euro className="h-6 w-6 text-red-primary" />
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-soft">
+                <Euro className="h-6 w-6 text-green-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-dark-text">Kosten</h3>
-                <p className="text-dark-text/70">[Wordt nog bekendgemaakt]</p>
+                <p className="font-semibold text-green-primary">Gratis toegang</p>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function HomePage() {
             Ontdek de wereld als klaslokaal
           </h2>
           <p className="mb-10 text-lg leading-relaxed text-dark-text/80">
-            Meld je aan voor het Duurzaamheidsfestival op woensdag 25 september in Burgers&apos; Zoo en neem nieuwe ideeën mee terug naar je school, klas of organisatie.
+            Meld je gratis aan voor het Duurzaamheidsfestival op vrijdag 25 september in Burgers&apos; Zoo en neem nieuwe ideeën mee terug naar je school, klas of organisatie.
           </p>
           <Button asChild size="lg" className="rounded-full bg-red-primary px-8 hover:bg-red-primary/90 text-white">
             <a href="https://www.tickettailor.com/events/duurzaamheidsfestival/2158917">

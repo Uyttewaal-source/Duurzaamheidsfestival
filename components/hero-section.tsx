@@ -20,7 +20,7 @@ export function HeroSection() {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <Image 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-9cczSLGFhz8AYm5bbjYZVsucX97o9f.jpg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-iqBRIQ5fAiP4pBtiWyAAcbA3vrtq1k.png"
             alt="Duurzaamheidsfestival"
             width={400}
             height={100}
@@ -43,7 +43,7 @@ export function HeroSection() {
         <div className="mb-10 grid gap-4 sm:grid-cols-3">
           <div className="flex items-center justify-center gap-2 text-dark-text">
             <Calendar className="h-5 w-5 text-red-primary" />
-            <span className="font-semibold">Woensdag 25 september</span>
+            <span className="font-semibold">Vrijdag 25 september</span>
           </div>
           <div className="flex items-center justify-center gap-2 text-dark-text">
             <Clock className="h-5 w-5 text-red-primary" />
