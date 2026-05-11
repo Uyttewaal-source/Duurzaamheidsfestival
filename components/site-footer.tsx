@@ -19,7 +19,7 @@ export function SiteFooter() {
             <div>
               <div className="mb-4 flex items-center gap-3">
                 <Image 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-JZPXtBKIEgkc6XFNuRgA2Xo.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-iqBRIQ5fAiP4pBtiWyAAcbA3vrtq1k.png"
                   alt="Duurzaamheidsfestival"
                   width={120}
                   height={40}
