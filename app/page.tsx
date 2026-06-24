@@ -163,6 +163,76 @@ export default function HomePage() {
       {/* Organisatoren */}
       <OrganizersSection />
 
+      {/* Sfeerimpressie */}
+      <section className="bg-white px-4 py-16 lg:px-6 lg:py-24">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-4 text-center text-3xl font-bold text-dark-text md:text-4xl">
+            Proef de sfeer van het Duurzaamheidsfestival
+          </h2>
+          <p className="mb-10 text-center text-lg leading-relaxed text-dark-text/70">
+            Beleef de energie, ontmoetingen en creativiteit van een eerdere editie.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg sm:col-span-2 lg:col-span-2">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-buiten.jpg"
+                alt="Deelnemers buiten op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105 lg:h-80"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-dansen.jpg"
+                alt="Bezoekers dansen samen op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105 lg:h-80"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-workshop.jpg"
+                alt="Workshopdeelnemers aan het werk op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-presentatie.jpg"
+                alt="Spreker geeft een presentatie op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-creatief.jpg"
+                alt="Creatieve activiteit op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-teachers.jpg"
+                alt="Docenten en begeleiders op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-lg">
+              <img
+                src="/images/festival-2025/duurzaamheidsfestival-professionals.jpg"
+                alt="Professionals ontmoeten elkaar op het Duurzaamheidsfestival"
+                loading="lazy"
+                className="h-64 w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-red-soft px-4 py-16 lg:px-6 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
