@@ -168,3 +168,64 @@
     transform: scale(1.05);
   }
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero entrance — fire once on page load */
+.hero-fade-down {
+  animation: fade-down 0.6s ease both;
+}
+
+.hero-fade-up {
+  animation: fade-up 0.55s ease both;
+}
+
+/* Butterfly slow float */
+.butterfly-float {
+  animation: float-gentle 8s ease-in-out infinite;
+}
+
+/* Scroll-reveal (driven by <AnimateIn> component via data-visible attribute) */
+[data-visible="false"] {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+[data-visible="true"] {
+  animation: fade-up 0.5s ease both;
+}
+
+/* Fully disable all motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .hero-fade-down,
+  .hero-fade-up,
+  .butterfly-float,
+  [data-visible="true"] {
+    animation: none !important;
+  }
+
+  [data-visible="false"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
