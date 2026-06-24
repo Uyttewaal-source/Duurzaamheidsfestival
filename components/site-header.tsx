@@ -39,7 +39,7 @@ export function SiteHeader() {
               {link.label}
             </a>
           ))}
-          <Button asChild className="ml-2 rounded-full bg-red-primary hover:bg-red-primary/90 text-white">
+          <Button asChild className="ml-2 rounded-full bg-red-primary text-white transition-transform duration-200 hover:scale-105 hover:bg-red-primary/90">
             <a href="https://www.tickettailor.com/events/duurzaamheidsfestival/2158917">
               Schrijf je in
               <ArrowRight className="ml-1 h-4 w-4" />
