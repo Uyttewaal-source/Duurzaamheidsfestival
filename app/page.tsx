@@ -24,7 +24,7 @@ export default function HomePage() {
           </AnimateIn>
           <AnimateIn delay={100}>
             <p className="text-lg leading-relaxed text-dark-text/80">
-              Onder het thema &apos;De wereld is jouw klaslokaal&apos; brengen we mensen uit verschillende hoeken van het onderwijs samen. We gaan naar buiten, doen inspiratie op en delen ideeen die je mee terugneemt naar je eigen school, klas of organisatie.
+              Gedurende deze dag kun je volop inspiratie opdoen rondom het thema: De wereld is jouw klaslokaal en is er volop ruimte om anderen te ontmoeten uit verschillende hoeken van het onderwijs.
             </p>
           </AnimateIn>
         </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-dark-text">Voor wie</h3>
-                  <p className="text-dark-text/70">Leerlingen PO/VO, docenten, bestuurders en onderwijsprofessionals</p>
+                  <p className="text-dark-text/70">Docenten, bestuurders, onderwijsprofessionals en Eco-teams</p>
                 </div>
               </div>
             </AnimateIn>

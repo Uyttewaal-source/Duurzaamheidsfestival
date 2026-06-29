@@ -43,7 +43,7 @@ export function HeroSection() {
           className="hero-fade-up mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-dark-text/80 md:text-xl"
           style={{ animationDelay: "0.25s" }}
         >
-          Een dag waarop leren naar buiten gaat: de school uit, de wereld in.
+          Een dag waarop het onderwijs naar buiten gaat: de school uit, de wereld in.
         </p>
 
         {/* Key info grid */}
@@ -70,7 +70,7 @@ export function HeroSection() {
           className="hero-fade-up mb-10 text-dark-text/70"
           style={{ animationDelay: "0.45s" }}
         >
-          Voor leerlingen, docenten, bestuurders en onderwijsprofessionals
+          Voor docenten, bestuurders, onderwijsprofessionals en Eco-teams
         </p>
 
         {/* CTA Buttons */}
