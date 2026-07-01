@@ -7,10 +7,25 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { WorkshopGrid } from "@/components/program/workshop-grid"
 
+const programmaDescription =
+  "Ontdek het volledige workshopprogramma van het Duurzaamheidsfestival op vrijdag 25 september 2026 in Burgers' Zoo, Arnhem. Zoek en filter op thema en vind de workshops die bij jou passen."
+
 export const metadata: Metadata = {
   title: "Programma | Duurzaamheidsfestival",
-  description:
-    "Ontdek het volledige workshopprogramma van het Duurzaamheidsfestival op vrijdag 25 september 2026 in Burgers' Zoo, Arnhem. Zoek en filter op thema en vind de workshops die bij jou passen.",
+  description: programmaDescription,
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: "https://www.duurzaamheidsfestival.nl/programma",
+    siteName: "Duurzaamheidsfestival",
+    title: "Het festivalprogramma | Duurzaamheidsfestival",
+    description: programmaDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Het festivalprogramma | Duurzaamheidsfestival",
+    description: programmaDescription,
+  },
 }
 
 export default function ProgrammaPage() {

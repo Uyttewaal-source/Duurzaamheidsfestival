@@ -9,12 +9,30 @@ const openSans = Open_Sans({
   display: 'swap',
 });
 
+const siteUrl = 'https://www.duurzaamheidsfestival.nl'
+const siteDescription =
+  "Het Duurzaamheidsfestival voor onderwijs op vrijdag 25 september 2026 in Burgers' Zoo, Arnhem. Georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en Gemeente Arnhem."
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'Duurzaamheidsfestival | De wereld is jouw klaslokaal',
-  description: 'Het Duurzaamheidsfestival voor onderwijs op woensdag 25 september in Burgers\' Zoo, Arnhem. Georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en Gemeente Arnhem.',
+  description: siteDescription,
   generator: 'v0.app',
   icons: {
     icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dag_van_de_Duurzaamheid_vlinder-iMpgfnsCazvXM9PynZFWO3G4MoqpRm.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'nl_NL',
+    url: siteUrl,
+    siteName: 'Duurzaamheidsfestival',
+    title: 'Duurzaamheidsfestival | De wereld is jouw klaslokaal',
+    description: siteDescription,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Duurzaamheidsfestival | De wereld is jouw klaslokaal',
+    description: siteDescription,
   },
 }
 
