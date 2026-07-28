@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, MapPin } from "lucide-react"
 import { AnimateIn } from "@/components/animate-in"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { DaySchedule } from "@/components/program/day-schedule"
 import { WorkshopGrid } from "@/components/program/workshop-grid"
 
 const programmaDescription =
@@ -72,10 +73,29 @@ export default function ProgrammaPage() {
         </div>
       </section>
 
-      {/* Workshops */}
+      {/* Programma-inhoud */}
       <section className="bg-white px-4 py-16 lg:px-6 lg:py-24">
         <div className="mx-auto max-w-5xl">
-          <WorkshopGrid />
+          {/* Dagprogramma */}
+          <AnimateIn>
+            <h2 className="mb-2 text-2xl font-bold text-green-primary md:text-3xl">Dagprogramma</h2>
+          </AnimateIn>
+          <AnimateIn delay={80}>
+            <p className="mb-10 text-dark-text/70">
+              Zo ziet de dag eruit, van inloop tot de afsluitende borrel.
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={120}>
+            <DaySchedule />
+          </AnimateIn>
+
+          {/* Workshops */}
+          <div id="workshops" className="mt-16 scroll-mt-24 lg:mt-24">
+            <AnimateIn>
+              <h2 className="mb-8 text-2xl font-bold text-green-primary md:text-3xl">Workshops</h2>
+            </AnimateIn>
+            <WorkshopGrid />
+          </div>
         </div>
       </section>
 
