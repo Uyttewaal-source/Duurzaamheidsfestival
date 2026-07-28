@@ -54,8 +54,7 @@ export default function ProgrammaPage() {
           <AnimateIn delay={160}>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-dark-text/80">
               Bekijk het dagprogramma én alle workshops van het Duurzaamheidsfestival. Van de opening en
-              inleidingen tot de workshoprondes, met het regenwoud van Burgers&apos; Zoo als leslokaal — zie
-              wanneer welk moment is en stel je eigen festivaldag samen.
+              inleidingen tot de workshoprondes, met het regenwoud van Burgers&apos; Zoo als leslokaal.
             </p>
           </AnimateIn>
           <AnimateIn delay={240}>
