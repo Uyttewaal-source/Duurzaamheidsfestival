@@ -31,7 +31,7 @@ export const schedule: ScheduleItem[] = [
   {
     time: "10:30",
     title: "Welkom & informatiemarkt",
-    description: "In het Safari Restaurant.",
+    description: "Aanmelden in het Safari Restaurant.",
   },
   {
     time: "11:00",

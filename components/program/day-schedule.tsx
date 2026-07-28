@@ -9,27 +9,30 @@ export function DaySchedule() {
       {schedule.map((item, index) => {
         const isLast = index === schedule.length - 1
         return (
-          <li key={`${item.time}-${item.title}`} className="relative flex gap-4 pb-8 last:pb-0 sm:gap-6">
-            {/* Verbindingslijn (niet bij het laatste moment) */}
-            {!isLast && (
-              <span
-                className="absolute left-[6px] top-4 h-full w-0.5 bg-green-soft sm:left-[7px]"
-                aria-hidden="true"
-              />
-            )}
+          <li
+            key={`${item.time}-${item.title}`}
+            className="grid grid-cols-[2.75rem_1.25rem_minmax(0,1fr)] gap-x-3 sm:grid-cols-[3.5rem_1.5rem_minmax(0,1fr)] sm:gap-x-4"
+          >
+            {/* Tijd — in een eigen kolom links van de tijdlijn */}
+            <time className="pt-1 text-right text-sm font-bold tabular-nums text-green-primary">
+              {item.time}
+            </time>
 
-            {/* Tijd + marker */}
-            <div className="flex shrink-0 flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-4">
-              <span className="relative z-10 mt-1.5 size-3.5 shrink-0 rounded-full bg-green-primary ring-4 ring-white sm:order-2" />
-              <time className="text-sm font-bold tabular-nums text-green-primary sm:order-1 sm:w-14 sm:text-right">
-                {item.time}
-              </time>
+            {/* Marker + verbindingslijn */}
+            <div className="relative flex justify-center">
+              {!isLast && (
+                <span
+                  className="absolute left-1/2 top-2 h-full w-0.5 -translate-x-1/2 bg-green-soft"
+                  aria-hidden="true"
+                />
+              )}
+              <span className="relative z-10 mt-1.5 size-3.5 shrink-0 rounded-full bg-green-primary ring-4 ring-white" />
             </div>
 
             {/* Inhoud */}
-            <div className="flex-1 pt-0.5">
+            <div className={isLast ? "pb-0" : "pb-8"}>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                <h3 className="text-lg font-semibold text-dark-text">{item.title}</h3>
+                <h3 className="text-lg font-semibold leading-snug text-dark-text">{item.title}</h3>
                 {item.optional && (
                   <span className="rounded-full bg-green-soft px-2 py-0.5 text-xs font-medium text-green-primary">
                     Optioneel
