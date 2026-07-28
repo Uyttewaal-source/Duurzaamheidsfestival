@@ -16,12 +16,11 @@
 // upcyclen) zijn bewust niet opgerekt.
 
 export const THEMES = [
-  "Natuur & buiten beleven",
+  "Natuur & buiten leren",
   "Klimaat & voedsel",
   "Circulair & afval",
   "Beleid & curriculum",
   "Spel & ontmoeting",
-  "Didactiek & werkvormen",
 ] as const
 
 export type Theme = (typeof THEMES)[number]
@@ -79,7 +78,7 @@ export const workshops: Workshop[] = [
   {
     id: "beleef-de-bush",
     title: "Beleef de Bush!",
-    theme: "Natuur & buiten beleven",
+    theme: "Natuur & buiten leren",
     description:
       "Gidsen van Burgers' Zoo laten je op een intensieve, interactieve manier kennismaken met het regenwoud. Burgers' Bush is een prachtig klein tropisch bos, met tientallen soorten dieren en meer dan duizend soorten planten. Bij deze wandeling gaat het niet om soortnamen leren of zo veel mogelijk feitjes opzuigen: de gidsen gaan samen met de deelnemers op ontdekking. Zij passen de 5 Pathways to Nature Connection toe, ontwikkeld door de University of Derby. Deze methode heeft een bewezen effect om de kloof tussen natuur en mens te dichten. Ervaar zelf hoe het werkt!",
     audience: "Iedereen",
@@ -162,7 +161,7 @@ export const workshops: Workshop[] = [
   {
     id: "natuurinclusief-onderwijs",
     title: "Community of Practice Natuurinclusief onderwijs",
-    theme: "Natuur & buiten beleven",
+    theme: "Natuur & buiten leren",
     description:
       "Wij zijn natuur — dat is de basisgedachte van natuurinclusief onderwijs. Deze beweging spreekt hoofd, hart en handen aan. Leerlingen en studenten trekken eropuit, ontdekken, werken samen en leren zorg dragen voor hun omgeving. Zo ontwikkelen ze niet alleen cognitieve vaardigheden, maar ook veerkracht, empathie en creativiteit. Het is veel meer dan een manier van lesgeven: het is een voedingsbodem voor de groei en het welzijn van de volgende generatie. Benieuwd hoe je natuur kunt verbinden met je eigen onderwijs? In deze Community of Practice ervaar je natuurinclusieve werkvormen en ga je naar huis met werkvormen die je morgen kunt toepassen.",
     audience: "Schoolleiders, bestuur, docenten, DuCo's",
@@ -176,7 +175,7 @@ export const workshops: Workshop[] = [
   {
     id: "didactic-bricks",
     title: "Didactic Bricks",
-    theme: "Didactiek & werkvormen",
+    theme: "Natuur & buiten leren",
     description:
       "Didactic Bricks zijn creatieve, actiegerichte activiteiten, ontworpen in een Europees project om leerlingen van 10 tot 15 jaar te betrekken bij lokale duurzaamheidsuitdagingen rond kleding, voedsel en natuur. Spelenderwijs ontwikkelen ze sociaal-ondernemende vaardigheden. Docenten kunnen de lesactiviteiten naar eigen inzicht combineren in lesplannen ('playlists') — een soort 'didactische spotify' waarmee je los van methodes snel inspeelt op actuele thema's. In deze workshop ervaar je zelf een brick-activiteit en ga je vervolgens zelf didactic bricks ontwikkelen.",
     audience: "Onderwijsprofessionals",
@@ -185,10 +184,19 @@ export const workshops: Workshop[] = [
   {
     id: "plantenrace",
     title: "Plantenrace",
-    theme: "Natuur & buiten beleven",
+    theme: "Natuur & buiten leren",
     description:
       "Hoe ziet je klaslokaal er eigenlijk uit? Wist je dat planten in een lokaal niet alleen een rol spelen in de esthetiek, maar ook bijdragen aan een gezonde leef- en leeromgeving? Wil jij je klas vergroenen maar weet je niet waar je moet beginnen, welke planten geschikt zijn of hoe je de vakanties overbrugt? Starten met één plantje in je lokaal, een plank, of denk je groter? Zie en ervaar hoe wij dit hebben aangepakt. Een simpele maar doeltreffende manier om je eco-team meer zichtbaarheid te geven én je school op te fleuren!",
     audience: "Docenten, schoolleiders, bestuurders en leerlingen van het PO en VO",
     speakers: [{ name: "Marieke Stoel", role: "Docent, Thomas a Kempis College" }],
+  },
+  {
+    id: "raad-van-alle-wezens",
+    title: "De Raad van Alle Wezens",
+    theme: "Natuur & buiten leren",
+    description:
+      "De Raad van Alle Wezens is een rituele werkvorm afkomstig uit The Work that Reconnects. Verplaats jezelf op creatieve wijze in een dier, plant, landschap of ander onderdeel van de levende aarde en geef deze een stem. Door vanuit een ander perspectief te spreken en te luisteren kom je samen vaak tot verrassende inzichten en oplossingen voor vraagstukken op het gebied van duurzaamheid en burgerschap.",
+    audience: "Iedereen",
+    speakers: [{ name: "Patrick van der Hofstad", role: "Directeur, Koersmakers Educatie" }],
   },
 ]

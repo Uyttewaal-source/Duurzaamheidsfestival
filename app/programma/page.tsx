@@ -52,8 +52,9 @@ export default function ProgrammaPage() {
           </AnimateIn>
           <AnimateIn delay={160}>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-dark-text/80">
-              Van klimaatwatertafels tot natuurwandelingen en escaperooms: ontdek alle workshops van het
-              Duurzaamheidsfestival. Zoek en filter op thema en vind de workshops die bij jou passen.
+              Van klimaatwatertafels tot escaperooms en het regenwoud van Burgers&apos; Zoo als leslokaal:
+              ontdek alle workshops van het Duurzaamheidsfestival. Zoek en filter op thema en vind de
+              workshops die bij jou passen.
             </p>
           </AnimateIn>
           <AnimateIn delay={240}>

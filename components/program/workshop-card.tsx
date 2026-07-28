@@ -9,12 +9,11 @@ import type { Theme, Workshop } from "@/lib/workshops"
 
 // Thema-tags blijven binnen de huisstijl (green-soft / red-soft).
 const themeTagStyles: Record<Theme, string> = {
-  "Natuur & buiten beleven": "bg-green-soft text-green-primary",
+  "Natuur & buiten leren": "bg-green-soft text-green-primary",
   "Klimaat & voedsel": "bg-green-soft text-green-primary",
   "Circulair & afval": "bg-red-soft text-red-primary",
   "Beleid & curriculum": "bg-red-soft text-red-primary",
   "Spel & ontmoeting": "bg-green-soft text-green-primary",
-  "Didactiek & werkvormen": "bg-red-soft text-red-primary",
 }
 
 const INITIAL_STOPWORDS = new Set(["van", "de", "der", "den", "het", "en", "&", "voor", "of", "the"])

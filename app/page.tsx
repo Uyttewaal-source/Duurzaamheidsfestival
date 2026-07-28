@@ -200,7 +200,7 @@ export default function HomePage() {
           </AnimateIn>
           <AnimateIn delay={80}>
             <p className="mb-8 text-lg leading-relaxed text-dark-text/80">
-              Van klimaatwatertafels tot natuurwandelingen, upcyclen en escaperooms: bekijk alle workshops, zoek en filter op thema en stel je eigen festivaldag samen.
+              Van klimaatwatertafels en upcyclen tot escaperooms en het regenwoud van Burgers&apos; Zoo als leslokaal: bekijk alle workshops, zoek en filter op thema en stel je eigen festivaldag samen.
             </p>
           </AnimateIn>
           <AnimateIn delay={160}>
