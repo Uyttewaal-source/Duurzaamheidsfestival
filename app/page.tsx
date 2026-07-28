@@ -1,5 +1,6 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Users, Clock, Euro, Mail, ExternalLink } from "lucide-react"
+import { Calendar, MapPin, Users, Clock, Euro, Mail, ExternalLink, ArrowRight } from "lucide-react"
 import { HeroSection } from "@/components/hero-section"
 import { OrganizersSection } from "@/components/organizers-section"
 import { SiteHeader } from "@/components/site-header"
@@ -186,6 +187,30 @@ export default function HomePage() {
               </div>
             </AnimateIn>
           </div>
+        </div>
+      </section>
+
+      {/* Programma teaser */}
+      <section id="programma" className="bg-green-soft px-4 py-16 lg:px-6 lg:py-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <AnimateIn>
+            <h2 className="mb-4 text-3xl font-bold text-green-primary md:text-4xl">
+              Ontdek het festivalprogramma
+            </h2>
+          </AnimateIn>
+          <AnimateIn delay={80}>
+            <p className="mb-8 text-lg leading-relaxed text-dark-text/80">
+              Van klimaatwatertafels tot natuurwandelingen, upcyclen en escaperooms: bekijk alle workshops, zoek en filter op thema en stel je eigen festivaldag samen.
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={160}>
+            <Button asChild size="lg" className="rounded-full bg-red-primary px-8 text-white transition-transform duration-200 hover:scale-105 hover:bg-red-primary/90">
+              <Link href="/programma">
+                Bekijk het programma
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </AnimateIn>
         </div>
       </section>
 

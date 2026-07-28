@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const navLinks = [
-  { href: "#intro", label: "Over" },
-  { href: "#praktische-info", label: "Praktisch" },
-  { href: "#verwachtingen", label: "Programma" },
-  { href: "#organisatoren", label: "Organisatoren" },
+  { href: "/#intro", label: "Over" },
+  { href: "/#praktische-info", label: "Praktisch" },
+  { href: "/programma", label: "Programma" },
+  { href: "/#organisatoren", label: "Organisatoren" },
 ]
 
 export function SiteHeader() {
@@ -18,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-6">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <Image 
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DUURZAAMHEIDS%20FESTIAVL-iqBRIQ5fAiP4pBtiWyAAcbA3vrtq1k.png"
             alt="Duurzaamheidsfestival"
