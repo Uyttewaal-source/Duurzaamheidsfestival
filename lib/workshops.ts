@@ -182,4 +182,13 @@ export const workshops: Workshop[] = [
     audience: "Onderwijsprofessionals",
     speakers: [{ name: "Collega's van Duurzame Pabo, Koersmakers Educatie & Leren voor Morgen" }],
   },
+  {
+    id: "plantenrace",
+    title: "Plantenrace",
+    theme: "Didactiek & werkvormen",
+    description:
+      "Hoe ziet je klaslokaal er eigenlijk uit? Wist je dat planten in een lokaal niet alleen een rol spelen in de esthetiek, maar ook bijdragen aan een gezonde leef- en leeromgeving? Wil jij je klas vergroenen maar weet je niet waar je moet beginnen, welke planten geschikt zijn of hoe je de vakanties overbrugt? Starten met één plantje in je lokaal, een plank, of denk je groter? Zie en ervaar hoe wij dit hebben aangepakt. Een simpele maar doeltreffende manier om je eco-team meer zichtbaarheid te geven én je school op te fleuren!",
+    audience: "VO en PO, ook voor leerlingen",
+    speakers: [{ name: "Marieke Stoel", role: "Docent, Thomas a Kempis College" }],
+  },
 ]
