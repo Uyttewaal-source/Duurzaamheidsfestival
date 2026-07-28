@@ -1,4 +1,4 @@
-import { Heart, ExternalLink } from "lucide-react"
+import { Heart, ExternalLink, Mail } from "lucide-react"
 import Image from "next/image"
 
 const organizers = [
@@ -14,7 +14,7 @@ export function SiteFooter() {
       {/* Main Footer Content */}
       <div className="px-4 py-12 lg:px-6 lg:py-16">
         <div className="mx-auto max-w-5xl">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             {/* Brand */}
             <div>
               <div className="mb-4 flex items-center gap-3">
@@ -72,6 +72,20 @@ export function SiteFooter() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="mb-4 font-semibold text-white">
+                Contact
+              </h3>
+              <a
+                href="mailto:info@eco-schools.nl"
+                className="inline-flex items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
+              >
+                <Mail className="h-4 w-4 shrink-0" />
+                info@eco-schools.nl
+              </a>
             </div>
           </div>
         </div>
