@@ -117,7 +117,7 @@ export const workshops: Workshop[] = [
     theme: "Spel & ontmoeting",
     description:
       "Ontmoet collega's en leerlingen, wissel ervaringen uit en ga in gesprek over duurzame dilemma's op school. Op een dynamische manier maak je kennis met elkaar en praat je over prikkelende dilemma's rondom duurzaamheid op school. Goede kans dat je met veel nieuwe en frisse ideeën uit deze workshop komt, die je misschien direct kunt toepassen op jouw school. Zin in een date?",
-    audience: "Iedereen",
+    audience: "Voor iedereen",
     speakers: [
       { name: "Eva Mientjes", role: "Coördinator Eco-Schools Nederland" },
       { name: "Yvette van Gastel", role: "Team Educatie, SME / Vereniging GDO" },
@@ -158,7 +158,7 @@ export const workshops: Workshop[] = [
     theme: "Spel & ontmoeting",
     description:
       "Hoe breng je de wereld naar jouw school? Met de Global Escape stappen leerlingen in een interactieve escaperoom vol video's, wereldvraagstukken, puzzels en uitdagingen. Samen zoeken ze naar antwoorden en proberen ze binnen 60 minuten de escape op te lossen. Deze mobiele escaperoom kan op vrijwel iedere school of locatie worden opgebouwd. Spelenderwijs maken leerlingen kennis met mondiale thema's, verschillende culturen en internationale vraagstukken. Een unieke ervaring waarin samenwerken, creativiteit en kritisch denken centraal staan.",
-    audience: "Leerlingen",
+    audience: "Leerlingen PO en VO",
     speakers: [{ name: "Trainers van Global Exploration", role: "Global Exploration" }],
   },
   {
@@ -190,7 +190,7 @@ export const workshops: Workshop[] = [
     theme: "Natuur & buiten leren",
     description:
       "Hoe ziet je klaslokaal er eigenlijk uit? Wist je dat planten in een lokaal niet alleen een rol spelen in de esthetiek, maar ook bijdragen aan een gezonde leef- en leeromgeving? Wil jij je klas vergroenen maar weet je niet waar je moet beginnen, welke planten geschikt zijn of hoe je de vakanties overbrugt? Starten met één plantje in je lokaal, een plank, of denk je groter? Zie en ervaar hoe wij dit hebben aangepakt. Een simpele maar doeltreffende manier om je eco-team meer zichtbaarheid te geven én je school op te fleuren!",
-    audience: "Docenten, schoolleiders, bestuurders en leerlingen van het PO en VO",
+    audience: "Voor iedereen",
     speakers: [{ name: "Marieke Stoel", role: "Docent, Thomas a Kempis College" }],
   },
   {
@@ -199,7 +199,7 @@ export const workshops: Workshop[] = [
     theme: "Natuur & buiten leren",
     description:
       "De Raad van Alle Wezens is een rituele werkvorm afkomstig uit The Work that Reconnects. Verplaats jezelf op creatieve wijze in een dier, plant, landschap of ander onderdeel van de levende aarde en geef deze een stem. Door vanuit een ander perspectief te spreken en te luisteren kom je samen vaak tot verrassende inzichten en oplossingen voor vraagstukken op het gebied van duurzaamheid en burgerschap.",
-    audience: "Iedereen",
+    audience: "Voor iedereen",
     speakers: [{ name: "Patrick van der Hofstad", role: "Directeur, Koersmakers Educatie" }],
   },
 ]
