@@ -132,7 +132,10 @@ export const workshops: Workshop[] = [
     audience: "Schoolleiders, bestuurders, docenten, DuCo's",
     speakers: [
       { name: "Peter Luijten", role: "Netwerkcoördinator basisonderwijs, coöperatie Leren voor Morgen" },
-      { name: "Suzanne Pepping", role: "Netwerkcoördinator voortgezet onderwijs, coöperatie Leren voor Morgen" },
+      {
+        name: "Marcel Elsenaar",
+        role: "Programmaleider Integraal Duurzaam Onderwijs, Verus (vereniging voor katholiek en christelijk onderwijs)",
+      },
       { name: "Eva Mientjes", role: "Coördinator Eco-Schools Nederland" },
     ],
   },
@@ -179,7 +182,7 @@ export const workshops: Workshop[] = [
     description:
       "Didactic Bricks zijn creatieve, actiegerichte activiteiten, ontworpen in een Europees project om leerlingen van 10 tot 15 jaar te betrekken bij lokale duurzaamheidsuitdagingen rond kleding, voedsel en natuur. Spelenderwijs ontwikkelen ze sociaal-ondernemende vaardigheden. Docenten kunnen de lesactiviteiten naar eigen inzicht combineren in lesplannen ('playlists') — een soort 'didactische spotify' waarmee je los van methodes snel inspeelt op actuele thema's. In deze workshop ervaar je zelf een brick-activiteit en ga je vervolgens zelf didactic bricks ontwikkelen.",
     audience: "Onderwijsprofessionals",
-    speakers: [{ name: "Collega's van Duurzame Pabo, Koersmakers Educatie & Leren voor Morgen" }],
+    speakers: [{ name: "Teun Kemmerling", role: "Projectleider Duurzaamheidsonderwijs, Koersmakers Educatie" }],
   },
   {
     id: "plantenrace",
