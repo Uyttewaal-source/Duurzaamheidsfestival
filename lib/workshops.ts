@@ -81,7 +81,7 @@ export const workshops: Workshop[] = [
     theme: "Natuur & buiten leren",
     description:
       "Gidsen van Burgers' Zoo laten je op een intensieve, interactieve manier kennismaken met het regenwoud. Burgers' Bush is een prachtig klein tropisch bos, met tientallen soorten dieren en meer dan duizend soorten planten. Bij deze wandeling gaat het niet om soortnamen leren of zo veel mogelijk feitjes opzuigen: de gidsen gaan samen met de deelnemers op ontdekking. Zij passen de 5 Pathways to Nature Connection toe, ontwikkeld door de University of Derby. Deze methode heeft een bewezen effect om de kloof tussen natuur en mens te dichten. Ervaar zelf hoe het werkt!",
-    audience: "Iedereen",
+    audience: "Voor iedereen",
     speakers: [{ name: "Gidsen van Burgers' Zoo", role: "Burgers' Zoo, Arnhem" }],
   },
   {
@@ -208,7 +208,7 @@ export const workshops: Workshop[] = [
     theme: "Circulair & afval",
     description:
       "In deze workshop ga je zelf aan de slag met jouw verborgen impact. Als Westerse consument gebruiken we de aarde voor alles: van eten tot wonen en van spullen tot vervoer. Maar de grootste impact ontstaat vaak al tijdens de productie: het delven van grondstoffen, de fabriek en het transport. Die impact zien we niet, omdat die meestal in andere landen plaatsvindt. Met een doe-boekje ontdek je bij dagelijkse onderwerpen wat bij jou past en waar jouw grootste impact zit, zodat je effectief kunt verduurzamen. Gebaseerd op het gedachtegoed van Babette Porcelijn (Think Big Act Now), met onderdelen uit het Impact Project.",
-    audience: "Iedereen",
+    audience: "Voor iedereen",
     speakers: [{ name: "Iris van Asselt", role: "Ambassadeur & gastdocent, stichting Think Big Act Now" }],
   },
 ]
