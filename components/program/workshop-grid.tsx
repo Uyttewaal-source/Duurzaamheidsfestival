@@ -16,12 +16,7 @@ function matchesQuery(workshop: (typeof workshops)[number], query: string): bool
   if (!query) return true
   const schedule = getWorkshopSchedule(workshop.id)
   const scheduleTerms = schedule
-    ? [
-        ...schedule.rounds.map((round) => `ronde ${round}`),
-        ...schedule.times,
-        schedule.location,
-        schedule.capacity ?? "",
-      ]
+    ? [...schedule.rounds.map((round) => `ronde ${round}`), ...schedule.times, schedule.location]
     : []
   const haystack = [
     workshop.title,

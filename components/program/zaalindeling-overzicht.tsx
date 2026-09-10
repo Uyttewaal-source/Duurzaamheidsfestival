@@ -17,7 +17,7 @@ export function ZaalindelingOverzicht() {
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-controls="zaalindeling-inhoud"
-        className="flex w-full cursor-pointer items-center justify-between gap-4 bg-green-soft/60 p-5 text-left outline-none transition-colors hover:bg-green-soft focus-visible:ring-[3px] focus-visible:ring-green-primary/50 lg:p-6"
+        className="flex w-full cursor-pointer flex-col items-start gap-4 bg-green-soft/60 p-5 text-left outline-none transition-colors hover:bg-green-soft focus-visible:ring-[3px] focus-visible:ring-green-primary/50 lg:p-6"
       >
         <span className="flex items-center gap-3">
           <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-green-primary">
@@ -30,9 +30,8 @@ export function ZaalindelingOverzicht() {
             </span>
           </span>
         </span>
-        <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-green-primary px-4 py-2 text-sm font-medium text-white">
-          <span className="hidden sm:inline">{open ? "Verberg overzicht" : "Toon overzicht"}</span>
-          <span className="sm:hidden">{open ? "Verberg" : "Toon"}</span>
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-green-primary px-4 py-2 text-sm font-medium text-white">
+          {open ? "Verberg overzicht" : "Toon overzicht"}
           <ChevronDown
             className={`size-4 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
             aria-hidden="true"
@@ -62,7 +61,6 @@ export function ZaalindelingOverzicht() {
                       <MapPin className="mt-0.5 size-4 shrink-0 text-green-primary" aria-hidden="true" />
                       <span>{slot.location}</span>
                     </p>
-                    {slot.capacity && <p className="mt-0.5 text-dark-text/50">{slot.capacity}</p>}
                   </div>
                 </li>
               ))}
