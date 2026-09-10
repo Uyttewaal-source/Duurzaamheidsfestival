@@ -43,18 +43,6 @@ export type Workshop = {
 
 export const workshops: Workshop[] = [
   {
-    id: "programmatisch-werken",
-    title: "Programmatisch werken aan onderwijs over natuur, duurzaamheid en klimaat",
-    theme: "Beleid & curriculum",
-    description:
-      "Jutta Groosman en Monique Verstraten delen waarom Flores Onderwijs en Delta Scholengroep bewust kozen voor programmatisch werken en voor een duurzame samenwerking met een partnerorganisatie. Aan de hand van praktijkvoorbeelden gaan we in op drie vragen:\n• Waarom kies je voor een programma en niet voor een project?\n• Hoe helpt programmatisch werken om te schakelen in plaats van te stapelen?\n• Hoe draagt deze aanpak bij aan de duurzame borging van NDK-onderwijs?\nEr is volop ruimte voor interactie. Samen onderzoeken we hoe programmatisch werken bijdraagt aan blijvende verandering en toekomstbestendig onderwijs in jouw organisatie.",
-    audience: "Duurzaamheidscoördinatoren, docenten, schoolleiders, bestuurders",
-    speakers: [
-      { name: "Jutta Groosman-Soeroredjo", role: "Programmamanager Delta Scholengroep & CLC Arnhem PO" },
-      { name: "Monique Verstraten", role: "Directeur-bestuurder Natuurcentrum Arnhem" },
-    ],
-  },
-  {
     id: "klimaatbestendige-stad",
     title: "Klimaatbestendige stad",
     theme: "Klimaat & voedsel",
@@ -131,7 +119,8 @@ export const workshops: Workshop[] = [
       "Je komt in contact met duurzaamheidscoördinatoren, docenten en schoolleiders uit heel Nederland, allemaal bezig om duurzaamheid te verankeren in hun onderwijs en schoolorganisatie. We leren actief van elkaar aan de hand van de SustainaBul: een toolkit die je als school helpt in beeld te brengen waar je nu staat. Deze momentopname kijkt naar schoolvisie, lesprogramma, manier van lesgeven, schoolomgeving, teamontwikkeling en bedrijfsvoering — een compleet beeld gebaseerd op de Whole School Approach. Daarmee kun je samen met collega's en leerlingen doelgericht stappen zetten naar een schoolcultuur waarin duurzaamheid in het DNA zit.",
     audience: "Schoolleiders, bestuurders, docenten, DuCo's",
     speakers: [
-      { name: "Peter Luijten", role: "Netwerkcoördinator basisonderwijs, coöperatie Leren voor Morgen" },
+      { name: "Jutta Groosman-Soeroredjo", role: "Programmamanager Delta Scholengroep & CLC Arnhem PO" },
+      { name: "Monique Verstraten", role: "Directeur-bestuurder Natuurcentrum Arnhem" },
       {
         name: "Marcel Elsenaar",
         role: "Programmaleider Integraal Duurzaam Onderwijs, Verus (vereniging voor katholiek en christelijk onderwijs)",
@@ -210,5 +199,14 @@ export const workshops: Workshop[] = [
       "In deze workshop ga je zelf aan de slag met jouw verborgen impact. Als Westerse consument gebruiken we de aarde voor alles: van eten tot wonen en van spullen tot vervoer. Maar de grootste impact ontstaat vaak al tijdens de productie: het delven van grondstoffen, de fabriek en het transport. Die impact zien we niet, omdat die meestal in andere landen plaatsvindt. Met een doe-boekje ontdek je bij dagelijkse onderwerpen wat bij jou past en waar jouw grootste impact zit, zodat je effectief kunt verduurzamen. Gebaseerd op het gedachtegoed van Babette Porcelijn (Think Big Act Now), met onderdelen uit het Impact Project.",
     audience: "Voor iedereen",
     speakers: [{ name: "Iris van Asselt", role: "Ambassadeur & gastdocent, stichting Think Big Act Now" }],
+  },
+  {
+    id: "toekomst-is-een-verhaal",
+    title: "De toekomst is een verhaal",
+    theme: "Klimaat & voedsel",
+    description:
+      "Verander het verhaal, verander de toekomst. Onder dit motto neemt Mark Boode ons mee. Waarom zorgen bosbranden, droge rivieren en afbrekende gletsjers niet voor verandering? Waarom doen verhalen dat wel? In welke toekomst willen we leven? Hoe veranderen we óns verhaal — als docent, als student, als mens? Is het onmogelijk of juist verbluffend simpel? Er is geen grens tussen het klaslokaal en de wereld. Ook niet tussen werk en privé.",
+    audience: "Docenten en leerlingen VO",
+    speakers: [{ name: "Mark Boode", role: "Medeoprichter Teachers for Climate & Schrijvers voor Toekomst" }],
   },
 ]

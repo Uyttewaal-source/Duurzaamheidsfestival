@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { DaySchedule } from "@/components/program/day-schedule"
 import { WorkshopGrid } from "@/components/program/workshop-grid"
+import { ZaalindelingOverzicht } from "@/components/program/zaalindeling-overzicht"
 
 const programmaDescription =
   "Ontdek het volledige workshopprogramma van het Duurzaamheidsfestival op vrijdag 25 september 2026 in Burgers' Zoo, Arnhem. Zoek en filter op thema en vind de workshops die bij jou passen."
@@ -86,6 +87,11 @@ export default function ProgrammaPage() {
           </AnimateIn>
           <AnimateIn delay={120}>
             <DaySchedule />
+          </AnimateIn>
+
+          {/* Zaalindeling per ronde (inklapbaar) */}
+          <AnimateIn delay={80} className="mt-10">
+            <ZaalindelingOverzicht />
           </AnimateIn>
 
           {/* Workshops */}
