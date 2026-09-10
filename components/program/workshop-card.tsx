@@ -1,11 +1,12 @@
 "use client"
 
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDown, Users } from "lucide-react"
+import { ChevronDown, Clock, MapPin, Users } from "lucide-react"
 
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
 import type { Theme, Workshop } from "@/lib/workshops"
+import { getWorkshopSchedule } from "@/lib/zaalindeling"
 
 // Thema-tags blijven binnen de huisstijl (green-soft / red-soft).
 const themeTagStyles: Record<Theme, string> = {
@@ -30,6 +31,18 @@ function getInitials(name: string): string {
 export function WorkshopCard({ workshop }: { workshop: Workshop }) {
   const speakerNames = workshop.speakers.map((speaker) => speaker.name).join(", ")
 
+  const schedule = getWorkshopSchedule(workshop.id)
+  const roundLabel = schedule
+    ? schedule.rounds.length > 1
+      ? `Ronde ${schedule.rounds.join(" & ")}`
+      : `Ronde ${schedule.rounds[0]}`
+    : null
+  const timeLabel = schedule
+    ? schedule.times.length > 1
+      ? `${schedule.times.slice(0, -1).join(", ")} en ${schedule.times[schedule.times.length - 1]}`
+      : schedule.times[0]
+    : null
+
   return (
     <AccordionPrimitive.Item
       value={workshop.id}
@@ -49,16 +62,44 @@ export function WorkshopCard({ workshop }: { workshop: Workshop }) {
             <ChevronDown className="mt-0.5 size-5 shrink-0 text-green-primary transition-transform duration-200 group-data-[state=open]:rotate-180" />
           </div>
           <h3 className="text-lg font-semibold leading-snug text-dark-text">{workshop.title}</h3>
-          <p className="mt-auto flex items-start gap-2 text-sm text-dark-text/60">
-            <Users className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
-            <span>{speakerNames}</span>
-          </p>
+          <div className="mt-auto flex flex-col gap-2">
+            <p className="flex items-start gap-2 text-sm text-dark-text/60">
+              <Users className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+              <span>{speakerNames}</span>
+            </p>
+            {schedule && (
+              <p className="flex items-start gap-2 text-sm text-dark-text/50">
+                <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+                <span>
+                  {roundLabel} · {schedule.location}
+                </span>
+              </p>
+            )}
+          </div>
         </AccordionPrimitive.Trigger>
       </AccordionPrimitive.Header>
 
       <AccordionPrimitive.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
         <div className="flex flex-col gap-5 px-6 pb-6">
           <p className="whitespace-pre-line text-sm leading-relaxed text-dark-text/80">{workshop.description}</p>
+
+          {schedule && (
+            <div className="flex flex-col gap-2 rounded-xl bg-green-soft/40 p-4 text-sm">
+              <p className="flex items-center gap-2 text-dark-text">
+                <Clock className="size-4 shrink-0 text-green-primary" aria-hidden="true" />
+                <span>
+                  {roundLabel} · {timeLabel}
+                </span>
+              </p>
+              <p className="flex items-center gap-2 text-dark-text">
+                <MapPin className="size-4 shrink-0 text-green-primary" aria-hidden="true" />
+                <span>
+                  {schedule.location}
+                  {schedule.capacity ? ` · ${schedule.capacity}` : ""}
+                </span>
+              </p>
+            </div>
+          )}
 
           <p className="text-sm">
             <span className="font-medium text-dark-text">Voor wie: </span>
