@@ -17,18 +17,27 @@ export function ZaalindelingOverzicht() {
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-controls="zaalindeling-inhoud"
-        className="flex w-full items-center justify-between gap-4 p-5 text-left outline-none transition-colors hover:bg-green-soft/30 focus-visible:ring-[3px] focus-visible:ring-green-primary/50 lg:p-6"
+        className="flex w-full cursor-pointer items-center justify-between gap-4 bg-green-soft/60 p-5 text-left outline-none transition-colors hover:bg-green-soft focus-visible:ring-[3px] focus-visible:ring-green-primary/50 lg:p-6"
       >
-        <span>
-          <span className="block text-lg font-semibold text-dark-text">Zaalindeling per ronde</span>
-          <span className="mt-0.5 block text-sm text-dark-text/60">
-            Bekijk in welke zaal elke workshop plaatsvindt
+        <span className="flex items-center gap-3">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-green-primary">
+            <MapPin className="size-5" aria-hidden="true" />
+          </span>
+          <span>
+            <span className="block text-lg font-semibold text-dark-text">Zaalindeling per ronde</span>
+            <span className="mt-0.5 block text-sm text-dark-text/70">
+              Bekijk in welke zaal elke workshop plaatsvindt
+            </span>
           </span>
         </span>
-        <ChevronDown
-          className={`size-5 shrink-0 text-green-primary transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-          aria-hidden="true"
-        />
+        <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-green-primary px-4 py-2 text-sm font-medium text-white">
+          <span className="hidden sm:inline">{open ? "Verberg overzicht" : "Toon overzicht"}</span>
+          <span className="sm:hidden">{open ? "Verberg" : "Toon"}</span>
+          <ChevronDown
+            className={`size-4 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+            aria-hidden="true"
+          />
+        </span>
       </button>
 
       <div id="zaalindeling-inhoud" hidden={!open} className="border-t border-green-soft px-5 pb-6 pt-2 lg:px-6">
