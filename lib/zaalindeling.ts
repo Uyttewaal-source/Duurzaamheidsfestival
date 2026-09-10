@@ -5,7 +5,7 @@
 // op de dagprogramma-tijdlijn (lib/schedule.ts): ronde 1 om 11:40, ronde 2 om
 // 14:00. "Beleef de Bush!" draait in beide rondes.
 //
-// Dit is de bron van waarheid voor ronde + zaal + capaciteit. De workshopkaart
+// Dit is de bron van waarheid voor ronde + zaal. De workshopkaart
 // leest het via getWorkshopSchedule(); het inklapbare zaaloverzicht rendert de
 // slots per ronde. Slots zonder workshopId (bv. "Our Future on Earth") hebben
 // géén eigen workshopkaart en verschijnen alleen in het overzicht.
@@ -25,7 +25,6 @@ export type ScheduleSlot = {
   title: string
   audience: string
   location: string
-  capacity?: string
 }
 
 export const scheduleSlots: ScheduleSlot[] = [
@@ -36,7 +35,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Duurzaamheid in het DNA van je school brengen",
     audience: "Onderwijsprofessionals",
     location: "Kilimanjaro Lodge",
-    capacity: "Max. 100 personen",
   },
   {
     round: 1,
@@ -44,7 +42,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Klimaatbestendige stad",
     audience: "Leerlingen",
     location: "Mount Kenia Lodge",
-    capacity: "Max. 80 personen",
   },
   {
     round: 1,
@@ -52,7 +49,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "De toekomst is een verhaal",
     audience: "Iedereen",
     location: "Canopy Lodge",
-    capacity: "Max. 50 personen",
   },
   {
     round: 1,
@@ -60,7 +56,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Beleef de Bush!",
     audience: "Iedereen",
     location: "Dierentuin (verzamelen op het terras)",
-    capacity: "3 groepen van 15",
   },
   {
     round: 1,
@@ -68,7 +63,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Versieren van eigen mokken",
     audience: "Leerlingen",
     location: "Safari Restaurant – bij de bar",
-    capacity: "± 20 plaatsen",
   },
   {
     round: 1,
@@ -76,7 +70,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Community of Practice Natuurinclusief onderwijs",
     audience: "Onderwijsprofessionals",
     location: "Safari Restaurant – bij het podium",
-    capacity: "± 30 plaatsen",
   },
   {
     round: 1,
@@ -84,7 +77,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Upcycle een eigen kledingstuk!",
     audience: "Iedereen",
     location: "Safari Restaurant – op het podium",
-    capacity: "± 15 plaatsen",
   },
   {
     round: 1,
@@ -92,14 +84,12 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Escaperoom: Kennislandgoed Larenstein",
     audience: "Iedereen",
     location: "Tree Tops Lodge",
-    capacity: "Max. 40 personen",
   },
   {
     round: 1,
     title: "Our Future on Earth",
     audience: "Iedereen (behalve PO-leerlingen)",
     location: "Knoefzaal",
-    capacity: "± 50 plaatsen",
   },
   // ── Ronde 2 ─────────────────────────────────────────────────────────────
   {
@@ -108,7 +98,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Natuur en duurzaamheid in de kerndoelen",
     audience: "Onderwijsprofessionals",
     location: "Kilimanjaro Lodge",
-    capacity: "Max. 100 personen",
   },
   {
     round: 2,
@@ -116,7 +105,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "De wereld op je bord",
     audience: "Leerlingen",
     location: "Mount Kenia Lodge",
-    capacity: "Max. 80 personen",
   },
   {
     round: 2,
@@ -124,7 +112,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Global Escape – De Wereld in je Klas",
     audience: "Iedereen",
     location: "Safari Restaurant – op 6 plekken",
-    capacity: "± 60 plaatsen (12 groepjes van 5)",
   },
   {
     round: 2,
@@ -132,7 +119,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Plantenrace",
     audience: "Leerlingen",
     location: "Safari Restaurant – voor het podium",
-    capacity: "± 30 plaatsen",
   },
   {
     round: 2,
@@ -140,7 +126,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Speed dating",
     audience: "Iedereen",
     location: "Safari Restaurant – bij de bar",
-    capacity: "± 30 plaatsen",
   },
   {
     round: 2,
@@ -148,7 +133,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Beleef de Bush!",
     audience: "Iedereen",
     location: "Dierentuin (verzamelen op het terras)",
-    capacity: "3 groepen van 15",
   },
   {
     round: 2,
@@ -156,7 +140,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "Didactic Bricks",
     audience: "Onderwijsprofessionals",
     location: "Canopy Lodge",
-    capacity: "Max. 50 personen",
   },
   {
     round: 2,
@@ -164,7 +147,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "De Raad van Alle Wezens",
     audience: "Iedereen",
     location: "Tree Tops Lodge",
-    capacity: "Max. 40 personen",
   },
   {
     round: 2,
@@ -172,7 +154,6 @@ export const scheduleSlots: ScheduleSlot[] = [
     title: "In 9 stappen naar een eco-positief leven",
     audience: "Iedereen",
     location: "Knoefzaal",
-    capacity: "Max. 85 personen",
   },
 ]
 
@@ -180,11 +161,10 @@ export type WorkshopSchedule = {
   rounds: Round[]
   times: string[]
   location: string
-  capacity?: string
 }
 
 /**
- * Ronde(s), tijd(en), zaal en capaciteit voor een workshop. Retourneert null
+ * Ronde(s), tijd(en) en zaal voor een workshop. Retourneert null
  * als de workshop niet in de zaalindeling staat. Een workshop in beide rondes
  * (Beleef de Bush!) gebruikt dezelfde zaal, dus die wordt één keer teruggegeven.
  */
@@ -196,7 +176,6 @@ export function getWorkshopSchedule(workshopId: string): WorkshopSchedule | null
     rounds,
     times: rounds.map((round) => ROUND_TIMES[round]),
     location: slots[0].location,
-    capacity: slots[0].capacity,
   }
 }
 

@@ -93,10 +93,7 @@ export function WorkshopCard({ workshop }: { workshop: Workshop }) {
               </p>
               <p className="flex items-center gap-2 text-dark-text">
                 <MapPin className="size-4 shrink-0 text-green-primary" aria-hidden="true" />
-                <span>
-                  {schedule.location}
-                  {schedule.capacity ? ` · ${schedule.capacity}` : ""}
-                </span>
+                <span>{schedule.location}</span>
               </p>
             </div>
           )}
