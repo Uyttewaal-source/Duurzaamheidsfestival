@@ -7,18 +7,29 @@ import { Search, SlidersHorizontal } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 import { THEMES, workshops, type Theme } from "@/lib/workshops"
+import { getWorkshopSchedule } from "@/lib/zaalindeling"
 import { WorkshopCard } from "./workshop-card"
 
 type Filter = Theme | "all"
 
 function matchesQuery(workshop: (typeof workshops)[number], query: string): boolean {
   if (!query) return true
+  const schedule = getWorkshopSchedule(workshop.id)
+  const scheduleTerms = schedule
+    ? [
+        ...schedule.rounds.map((round) => `ronde ${round}`),
+        ...schedule.times,
+        schedule.location,
+        schedule.capacity ?? "",
+      ]
+    : []
   const haystack = [
     workshop.title,
     workshop.theme,
     workshop.description,
     workshop.audience,
     ...workshop.speakers.flatMap((speaker) => [speaker.name, speaker.role ?? ""]),
+    ...scheduleTerms,
   ]
     .join(" ")
     .toLowerCase()
@@ -52,7 +63,7 @@ export function WorkshopGrid() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Zoek op titel, spreker of onderwerp…"
+            placeholder="Zoek op titel, spreker, ronde of zaal…"
             aria-label="Zoek in het workshopprogramma"
             className="h-12 rounded-full border-green-soft bg-white pl-12 text-base shadow-sm focus-visible:ring-green-primary/50"
           />
