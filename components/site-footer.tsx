@@ -34,20 +34,26 @@ export function SiteFooter() {
             {/* Navigatie */}
             <div>
               <h3 className="mb-4 font-semibold text-white">
-                Op deze pagina
+                Navigatie
               </h3>
               <ul className="flex flex-col gap-2 text-sm text-white/70">
                 <li>
-                  <a href="#intro" className="transition-colors hover:text-white">Over het festival</a>
+                  <a href="/#intro" className="transition-colors hover:text-white">Over het festival</a>
                 </li>
                 <li>
-                  <a href="#praktische-info" className="transition-colors hover:text-white">Praktische informatie</a>
+                  <a href="/#praktische-info" className="transition-colors hover:text-white">Praktische informatie</a>
                 </li>
                 <li>
-                  <a href="#verwachtingen" className="transition-colors hover:text-white">Wat kun je verwachten</a>
+                  <a href="/#verwachtingen" className="transition-colors hover:text-white">Wat kun je verwachten</a>
                 </li>
                 <li>
-                  <a href="#organisatoren" className="transition-colors hover:text-white">Organisatoren</a>
+                  <a href="/programma" className="transition-colors hover:text-white">Programma</a>
+                </li>
+                <li>
+                  <a href="/inspiratiemarkt" className="transition-colors hover:text-white">Inspiratiemarkt</a>
+                </li>
+                <li>
+                  <a href="/#organisatoren" className="transition-colors hover:text-white">Organisatoren</a>
                 </li>
               </ul>
             </div>
