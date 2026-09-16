@@ -209,4 +209,13 @@ export const workshops: Workshop[] = [
     audience: "Docenten en leerlingen VO",
     speakers: [{ name: "Mark Boode", role: "Medeoprichter Teachers for Climate & Schrijvers voor Toekomst" }],
   },
+  {
+    id: "onze-toekomst-op-aarde",
+    title: "Onze Toekomst op Aarde",
+    theme: "Klimaat & voedsel",
+    description:
+      "We nemen je mee op een VR-ruimtereis én naar de toekomst. Met de VR-ruimtereis maak je het 'overview effect' mee: de ervaring die astronauten hebben wanneer ze vanuit de ruimte de Aarde zien — heel mooi, maar ook kwetsbaar. Er is nergens een Planeet B. Daarna maak je kennis met het leven op aarde: wat is er veranderd sinds 1970, en hoe ziet de wereld eruit in 2050 als we niet veranderen? Wat abstract en ver weg leek, wordt zichtbaar. Je ziet dat er al veel in beweging is en wordt zelf ook in beweging gebracht: hoe kun jij bijdragen aan een aantrekkelijke, betere toekomst?",
+    audience: "Iedereen (behalve PO-leerlingen)",
+    speakers: [{ name: "Egbert Mulder", role: "Socioloog/antropoloog & oprichter Our Future on Earth" }],
+  },
 ]
