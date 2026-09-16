@@ -10,7 +10,7 @@ import { organisaties } from "@/lib/inspiratiemarkt"
 export const metadata: Metadata = {
   title: "Inspiratiemarkt | Duurzaamheidsfestival",
   description:
-    "Ontdek de organisaties op de inspiratiemarkt van het Duurzaamheidsfestival in Burgers' Zoo, Arnhem. Bekijk wie er zijn en verken hun werk rond duurzaamheid en onderwijs.",
+    "Tijdens de inspiratiemarkt kun je bij verschillende stands langslopen om meer informatie op te halen over verschillende producten of diensten die linken aan duurzaamheid en het onderwijs. Een aantal van deze organisaties zijn ook supporters (partners) van Eco-Schools.",
 }
 
 const INITIAL_STOPWORDS = new Set(["van", "de", "der", "den", "het", "en", "&", "voor", "of", "the", "to"])
