@@ -7,8 +7,8 @@
 //
 // Dit is de bron van waarheid voor ronde + zaal. De workshopkaart
 // leest het via getWorkshopSchedule(); het inklapbare zaaloverzicht rendert de
-// slots per ronde. Slots zonder workshopId (bv. "Our Future on Earth") hebben
-// géén eigen workshopkaart en verschijnen alleen in het overzicht.
+// slots per ronde. Een slot zonder workshopId heeft géén eigen workshopkaart en
+// verschijnt alleen in het overzicht (op dit moment zijn alle slots gekoppeld).
 
 export type Round = 1 | 2
 
@@ -87,7 +87,8 @@ export const scheduleSlots: ScheduleSlot[] = [
   },
   {
     round: 1,
-    title: "Our Future on Earth",
+    workshopId: "onze-toekomst-op-aarde",
+    title: "Onze Toekomst op Aarde",
     audience: "Iedereen (behalve PO-leerlingen)",
     location: "Knoefzaal",
   },
