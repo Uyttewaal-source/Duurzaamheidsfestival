@@ -116,7 +116,7 @@ export const workshops: Workshop[] = [
     title: "Duurzaamheid in het DNA van je school brengen",
     theme: "Beleid & curriculum",
     description:
-      "Je komt in contact met duurzaamheidscoördinatoren, docenten en schoolleiders uit heel Nederland, allemaal bezig om duurzaamheid te verankeren in hun onderwijs en schoolorganisatie. We leren actief van elkaar aan de hand van de SustainaBul: een toolkit die je als school helpt in beeld te brengen waar je nu staat. Deze momentopname kijkt naar schoolvisie, lesprogramma, manier van lesgeven, schoolomgeving, teamontwikkeling en bedrijfsvoering — een compleet beeld gebaseerd op de Whole School Approach. Daarmee kun je samen met collega's en leerlingen doelgericht stappen zetten naar een schoolcultuur waarin duurzaamheid in het DNA zit.",
+      "Hoe maak je van duurzaamheid een vast onderdeel van je schoolcultuur in plaats van de zoveelste taak op de stapel? Jutta Groosman en Monique Verstraten delen waarom Flores Onderwijs en Delta Scholengroep bewust kozen voor programmatisch werken en voor een duurzame samenwerking met een partnerorganisatie.\n\nDaarna breng je met behulp van de SustainaBul-toolkit de huidige situatie op jouw eigen school in kaart. Op basis van de Whole School Approach kijken we naar het complete plaatje: van schoolvisie en lesprogramma tot de schoolomgeving en bedrijfsvoering. Waarbij we uiteraard actief leren van elkaar!",
     audience: "Schoolleiders, bestuurders, docenten, DuCo's",
     speakers: [
       { name: "Jutta Groosman-Soeroredjo", role: "Programmamanager Delta Scholengroep & CLC Arnhem PO" },
