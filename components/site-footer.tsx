@@ -38,7 +38,7 @@ export function SiteFooter() {
               </h3>
               <ul className="flex flex-col gap-2 text-sm text-white/70">
                 <li>
-                  <a href="/#intro" className="transition-colors hover:text-white">Over het festival</a>
+                  <a href="/zaalindeling" className="transition-colors hover:text-white">Zaalindeling</a>
                 </li>
                 <li>
                   <a href="/#praktische-info" className="transition-colors hover:text-white">Praktische informatie</a>

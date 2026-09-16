@@ -1,11 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, Clock, MapPin } from "lucide-react"
+import { ChevronDown, MapPin } from "lucide-react"
 
-import { ROUND_TIMES, slotsForRound, type Round } from "@/lib/zaalindeling"
-
-const ROUNDS: Round[] = [1, 2]
+import { ZaalindelingRondes } from "./zaalindeling-rondes"
 
 export function ZaalindelingOverzicht() {
   const [open, setOpen] = useState(false)
@@ -39,34 +37,8 @@ export function ZaalindelingOverzicht() {
         </span>
       </button>
 
-      <div id="zaalindeling-inhoud" hidden={!open} className="border-t border-green-soft px-5 pb-6 pt-2 lg:px-6">
-        {ROUNDS.map((round) => (
-          <div key={round} className="mt-4">
-            <h3 className="mb-3 flex items-center gap-2 font-semibold text-green-primary">
-              <Clock className="size-4 shrink-0" aria-hidden="true" />
-              Ronde {round} · {ROUND_TIMES[round]}
-            </h3>
-            <ul className="divide-y divide-green-soft overflow-hidden rounded-xl border border-green-soft">
-              {slotsForRound(round).map((slot) => (
-                <li
-                  key={`${round}-${slot.title}`}
-                  className="flex flex-col gap-1 p-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6"
-                >
-                  <div className="min-w-0">
-                    <p className="font-medium text-dark-text">{slot.title}</p>
-                    <p className="text-sm text-dark-text/60">{slot.audience}</p>
-                  </div>
-                  <div className="text-sm text-dark-text/70 sm:shrink-0 sm:text-right">
-                    <p className="flex items-start gap-1.5 sm:justify-end">
-                      <MapPin className="mt-0.5 size-4 shrink-0 text-green-primary" aria-hidden="true" />
-                      <span>{slot.location}</span>
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div id="zaalindeling-inhoud" hidden={!open} className="border-t border-green-soft p-5 lg:p-6">
+        <ZaalindelingRondes />
       </div>
     </div>
   )

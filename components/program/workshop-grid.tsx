@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { Search, SlidersHorizontal } from "lucide-react"
 
@@ -34,6 +34,25 @@ function matchesQuery(workshop: (typeof workshops)[number], query: string): bool
 export function WorkshopGrid() {
   const [query, setQuery] = useState("")
   const [activeFilter, setActiveFilter] = useState<Filter>("all")
+  const [openId, setOpenId] = useState("")
+
+  // Open + scroll naar de kaart waarnaar de zaalindeling (of een andere link)
+  // via de hash verwijst, bv. /programma#plantenrace.
+  useEffect(() => {
+    function openFromHash() {
+      const id = decodeURIComponent(window.location.hash.replace(/^#/, ""))
+      if (!id || !workshops.some((workshop) => workshop.id === id)) return
+      setQuery("")
+      setActiveFilter("all")
+      setOpenId(id)
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+      })
+    }
+    openFromHash()
+    window.addEventListener("hashchange", openFromHash)
+    return () => window.removeEventListener("hashchange", openFromHash)
+  }, [])
 
   const filtered = useMemo(
     () =>
@@ -102,6 +121,8 @@ export function WorkshopGrid() {
         <AccordionPrimitive.Root
           type="single"
           collapsible
+          value={openId}
+          onValueChange={setOpenId}
           className="grid grid-cols-1 items-start gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {filtered.map((workshop) => (

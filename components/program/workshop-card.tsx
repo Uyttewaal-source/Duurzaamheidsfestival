@@ -46,7 +46,8 @@ export function WorkshopCard({ workshop }: { workshop: Workshop }) {
   return (
     <AccordionPrimitive.Item
       value={workshop.id}
-      className="group h-fit overflow-hidden rounded-2xl border border-green-soft bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md data-[state=open]:border-green-primary/40 data-[state=open]:shadow-md"
+      id={workshop.id}
+      className="group h-fit scroll-mt-28 overflow-hidden rounded-2xl border border-green-soft bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md data-[state=open]:border-green-primary/40 data-[state=open]:shadow-md"
     >
       <AccordionPrimitive.Header className="flex">
         <AccordionPrimitive.Trigger className="flex min-h-40 w-full flex-1 flex-col gap-3 rounded-2xl p-6 text-left outline-none transition-colors focus-visible:ring-[3px] focus-visible:ring-green-primary/50">
