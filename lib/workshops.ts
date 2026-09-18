@@ -169,7 +169,7 @@ export const workshops: Workshop[] = [
     title: "Didactic Bricks",
     theme: "Natuur & buiten leren",
     description:
-      "Didactic Bricks zijn creatieve, actiegerichte activiteiten, ontworpen in een Europees project om leerlingen van 10 tot 15 jaar te betrekken bij lokale duurzaamheidsuitdagingen rond kleding, voedsel en natuur. Spelenderwijs ontwikkelen ze sociaal-ondernemende vaardigheden. Docenten kunnen de lesactiviteiten naar eigen inzicht combineren in lesplannen ('playlists') — een soort 'didactische spotify' waarmee je los van methodes snel inspeelt op actuele thema's. In deze workshop ervaar je zelf een brick-activiteit en ga je vervolgens zelf didactic bricks ontwikkelen.",
+      "Didactic Bricks zijn creatieve, actiegerichte activiteiten, ontworpen in een Europees project om leerlingen van 10 tot 15 jaar te betrekken bij lokale duurzaamheidsuitdagingen rond kleding, voedsel en natuur. Spelenderwijs ontwikkelen ze sociaal-ondernemende vaardigheden. Docenten kunnen de lesactiviteiten naar eigen inzicht combineren in lesplannen ('playlists'), een soort 'didactische spotify' waarmee je los van methodes snel inspeelt op actuele thema's. In deze workshop leer je meer over het concept, hoe het zelf te gebruiken in de klas en ga je zelf aan de gang met het maken van een playlist. Voor deze workshop wordt het meenemen van een laptop sterk aangeraden om zelf op de website aan de slag te gaan.",
     audience: "Onderwijsprofessionals",
     speakers: [{ name: "Teun Kemmerling", role: "Projectleider Duurzaamheidsonderwijs, Koersmakers Educatie" }],
   },
