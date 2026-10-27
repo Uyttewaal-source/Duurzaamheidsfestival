@@ -105,14 +105,14 @@ export function WorkshopCard({ workshop }: { workshop: Workshop }) {
           </p>
 
           <div className="border-t border-green-soft pt-4">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-dark-text/50">
+            <p className="mb-3 text-sm font-semibold text-dark-text/50">
               {workshop.speakers.length > 1 ? "Sprekers" : "Spreker"}
             </p>
             <ul className="flex flex-col gap-3">
               {workshop.speakers.map((speaker) => (
                 <li key={speaker.name} className="flex items-start gap-3">
                   <Avatar className="size-9 border border-green-soft">
-                    <AvatarFallback className="bg-green-soft text-xs font-semibold text-green-primary">
+                    <AvatarFallback className="bg-green-soft text-xs font-semibold text-green-ink">
                       {getInitials(speaker.name)}
                     </AvatarFallback>
                   </Avatar>

@@ -41,14 +41,14 @@ export default function ProgrammaPage() {
           <AnimateIn>
             <Link
               href="/#programma"
-              className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-green-primary transition-colors hover:text-green-primary/80"
+              className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-green-ink transition-colors hover:text-green-ink/80"
             >
               <ArrowLeft className="size-4" />
               Terug naar de homepage
             </Link>
           </AnimateIn>
           <AnimateIn delay={80}>
-            <h1 className="text-3xl font-bold text-green-primary md:text-4xl lg:text-5xl">
+            <h1 className="text-3xl font-extrabold text-forest md:text-4xl lg:text-5xl">
               Het festivalprogramma
             </h1>
           </AnimateIn>
@@ -78,7 +78,7 @@ export default function ProgrammaPage() {
         <div className="mx-auto max-w-5xl">
           {/* Dagprogramma */}
           <AnimateIn>
-            <h2 className="mb-2 text-2xl font-bold text-green-primary md:text-3xl">Dagprogramma</h2>
+            <h2 className="mb-2 text-2xl font-extrabold text-forest md:text-3xl">Dagprogramma</h2>
           </AnimateIn>
           <AnimateIn delay={80}>
             <p className="mb-10 text-dark-text/70">
@@ -97,7 +97,7 @@ export default function ProgrammaPage() {
           {/* Workshops */}
           <div id="workshops" className="mt-16 scroll-mt-24 lg:mt-24">
             <AnimateIn>
-              <h2 className="mb-8 text-2xl font-bold text-green-primary md:text-3xl">Workshops</h2>
+              <h2 className="mb-8 text-2xl font-extrabold text-forest md:text-3xl">Workshops</h2>
             </AnimateIn>
             <WorkshopGrid />
           </div>

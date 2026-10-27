@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { Menu, X, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -40,10 +40,10 @@ export function SiteHeader() {
               {link.label}
             </a>
           ))}
-          <Button asChild className="ml-2 rounded-full bg-red-primary text-white transition-transform duration-200 hover:scale-105 hover:bg-red-primary/90">
+          <Button asChild className="ml-2 rounded-full bg-red-primary text-white transition-colors duration-200 hover:bg-red-primary/90">
             <a href="https://www.tickettailor.com/events/duurzaamheidsfestival/2158917">
               Schrijf je in
-              <ArrowRight className="ml-1 h-4 w-4" />
+              <ExternalLink className="ml-1.5 h-4 w-4" aria-hidden="true" />
             </a>
           </Button>
         </div>
@@ -77,12 +77,12 @@ export function SiteHeader() {
               </a>
             ))}
             <Button asChild className="mt-4 rounded-full bg-red-primary hover:bg-red-primary/90 text-white">
-              <a 
-                href="https://www.tickettailor.com/events/duurzaamheidsfestival/2158917" 
+              <a
+                href="https://www.tickettailor.com/events/duurzaamheidsfestival/2158917"
                 onClick={() => setIsOpen(false)}
               >
                 Schrijf je in
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
           </div>

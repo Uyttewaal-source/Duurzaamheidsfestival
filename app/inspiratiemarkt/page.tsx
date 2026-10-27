@@ -35,14 +35,14 @@ export default function InspiratiemarktPage() {
           <AnimateIn>
             <Link
               href="/"
-              className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-green-primary transition-colors hover:text-green-primary/80"
+              className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-green-ink transition-colors hover:text-green-ink/80"
             >
               <ArrowLeft className="size-4" />
               Terug naar de homepage
             </Link>
           </AnimateIn>
           <AnimateIn delay={80}>
-            <h1 className="text-3xl font-bold text-green-primary md:text-4xl lg:text-5xl">Inspiratiemarkt</h1>
+            <h1 className="text-3xl font-extrabold text-forest md:text-4xl lg:text-5xl">Inspiratiemarkt</h1>
           </AnimateIn>
           <AnimateIn delay={160}>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-dark-text/80">
@@ -76,7 +76,7 @@ export default function InspiratiemarktPage() {
                         className="max-h-20 max-w-[85%] object-contain"
                       />
                     ) : (
-                      <span className="flex size-16 items-center justify-center rounded-2xl bg-green-soft text-lg font-bold text-green-primary">
+                      <span className="flex size-16 items-center justify-center rounded-2xl bg-green-soft text-lg font-bold text-green-ink">
                         {getInitials(org.name)}
                       </span>
                     )}

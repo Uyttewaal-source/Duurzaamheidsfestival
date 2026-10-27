@@ -14,7 +14,7 @@ export function DaySchedule() {
             className="grid grid-cols-[2.75rem_1.25rem_minmax(0,1fr)] gap-x-3 sm:grid-cols-[3.5rem_1.5rem_minmax(0,1fr)] sm:gap-x-4"
           >
             {/* Tijd — in een eigen kolom links van de tijdlijn */}
-            <time className="pt-1 text-right text-sm font-bold tabular-nums text-green-primary">
+            <time className="pt-1 text-right text-sm font-bold tabular-nums text-green-ink">
               {item.time}
             </time>
 
@@ -56,7 +56,7 @@ export function DaySchedule() {
               {item.workshopRound && (
                 <Link
                   href="#workshops"
-                  className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-green-primary underline-offset-4 outline-none transition-colors hover:underline focus-visible:underline"
+                  className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-green-ink underline-offset-4 outline-none transition-colors hover:underline focus-visible:underline"
                 >
                   Bekijk de workshops
                   <ArrowDown className="size-4" aria-hidden="true" />
