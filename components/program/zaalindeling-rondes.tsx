@@ -16,7 +16,7 @@ export function ZaalindelingRondes() {
     <div className="flex flex-col gap-8">
       {ROUNDS.map((round) => (
         <div key={round}>
-          <h3 className="mb-3 flex items-center gap-2 font-semibold text-green-primary">
+          <h3 className="mb-3 flex items-center gap-2 font-semibold text-forest">
             <Clock className="size-4 shrink-0" aria-hidden="true" />
             Ronde {round} · {ROUND_TIMES[round]}
           </h3>
@@ -29,7 +29,7 @@ export function ZaalindelingRondes() {
                     className={`${ROW_BASE} group outline-none transition-colors hover:bg-green-soft/40 focus-visible:bg-green-soft/40`}
                   >
                     <div className="min-w-0">
-                      <p className="flex items-center gap-1.5 font-medium text-dark-text transition-colors group-hover:text-green-primary">
+                      <p className="flex items-center gap-1.5 font-medium text-dark-text transition-colors group-hover:text-green-ink">
                         {slot.title}
                         <ArrowRight className="size-4 shrink-0 text-green-primary" aria-hidden="true" />
                       </p>

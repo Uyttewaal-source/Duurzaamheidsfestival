@@ -30,12 +30,12 @@ export function OrganizersSection() {
     <section id="organisatoren" className="bg-white px-4 py-16 lg:px-6 lg:py-24">
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
-          <h2 className="mb-4 text-center text-3xl font-bold text-green-primary md:text-4xl">
+          <h2 className="mb-4 text-3xl font-extrabold text-forest md:text-4xl">
             Georganiseerd door
           </h2>
         </AnimateIn>
         <AnimateIn delay={80}>
-          <p className="mx-auto mb-12 max-w-3xl text-center leading-relaxed text-dark-text/80">
+          <p className="mb-12 max-w-3xl leading-relaxed text-dark-text/80">
             Het Duurzaamheidsfestival wordt georganiseerd door Eco-Schools, Leren voor Morgen, Collectief Natuurinclusief en de Gemeente Arnhem. Samen brengen zij onderwijs, natuur, duurzaamheid en samenleving bij elkaar rond het thema: De wereld is jouw klaslokaal.
           </p>
         </AnimateIn>
@@ -47,7 +47,7 @@ export function OrganizersSection() {
                 href={org.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-8 transition-all duration-200 hover:-translate-y-1 hover:border-green-primary hover:shadow-lg"
+                className="group flex h-full flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-8 outline-none transition-colors duration-200 hover:border-green-primary focus-visible:ring-[3px] focus-visible:ring-green-primary/50"
               >
                 <div className="relative mb-4 flex h-24 w-full items-center justify-center">
                   <Image
@@ -55,11 +55,11 @@ export function OrganizersSection() {
                     alt={org.name}
                     width={140}
                     height={80}
-                    className="h-auto w-auto max-h-24 object-contain transition-transform duration-200 group-hover:scale-105"
+                    className="h-auto w-auto max-h-24 object-contain"
                   />
                 </div>
                 <h3 className="mb-2 text-center text-sm font-semibold text-dark-text">{org.name}</h3>
-                <span className="flex items-center gap-1 text-xs text-dark-text/60 transition-colors group-hover:text-green-primary">
+                <span className="flex items-center gap-1 text-xs text-dark-text/60 transition-colors group-hover:text-green-ink">
                   Bezoek website
                   <ExternalLink className="h-3 w-3" />
                 </span>
